@@ -14,3 +14,8 @@ body {
 body * {
   box-sizing: border-box;
 }
+article {
+	width: 16rem;
+	height: auto;
+	border: 1px solid #efefef;
+}
