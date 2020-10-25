@@ -36,23 +36,93 @@
 				<polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
 			</symbol>
 		</svg>
+		<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/b001.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/b002.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/b003.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/b004.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img/thumbnails/b001.jpg" onclick="currentSlide(1)" alt="Giriş">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/thumbnails/b002.jpg" onclick="currentSlide(2)" alt="Çalışma Alanı">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/thumbnails/b003.jpg" onclick="currentSlide(3)" alt="Kafe">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/thumbnails/b004.jpg" onclick="currentSlide(4)" alt="Kafe Geniş Spektrum">
+    </div>
+  </div>
+</div>
+
+<div id="infoModal" class="modal">
+  <span class="close cursor" onclick="closeModal('infoModal')">&times;</span>
+  <div class="modal-content">
+					<h2>Instagram'da Takip edin</h2>
+			<!-- SnapWidget -->
+			<script src="https://snapwidget.com/js/snapwidget.js"></script>
+			<iframe src="https://snapwidget.com/embed/883724" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+					<br>
+					<p class="text-center">Bize ulaşın <a href="mailto:info@mimozamimari.com?cc=beyzakulu@mimozamimari.com, senanesem@mimozamimari.com, &subject=mimozamimari.com dan mail">info@mimozamimari.com</a></p>
+				</div>
+				
+				<p class="text-center"><small>Beyza Kulu ve Sena Neşem Uysal tarafından kurulan bir mimarlık ofisidir.</small></p>
+  </div>
+</div>
+<button type="button" class="modal-trigger js-trigger" onclick="openModal('infoModal');">Bilgi</button>
+<div class="bottom-left hover-shadow"  onclick="openModal('infoModal');">
+	<h3>
+		<div class="vertical-text">h</div>
+		<div class="vertical-text">a</div>
+		<div class="vertical-text">k</div>
+		<div class="vertical-text">k</div>
+		<div class="vertical-text">ı</div>
+		<div class="vertical-text">m</div>
+		<div class="vertical-text">ı</div>
+		<div class="vertical-text">z</div>
+		<div class="vertical-text">d</div>
+		<div class="vertical-text">a</div>
+	</h3>
+</div>
 		<main>
 			<div class="frame">
 				<header class="heading">
 					<h1 class="heading__welcome">MİMOZA MİMARLIK<br>İZMİR</h1>
 				</header>
-				<div class="bottom-left">
-					<h2>
-						<div class="vertical-text">p</div>
-						<div class="vertical-text">r</div>
-						<div class="vertical-text">o</div>
-						<div class="vertical-text">j</div>
-						<div class="vertical-text">e</div>
-						<div class="vertical-text">l</div>
-						<div class="vertical-text">e</div>
-						<div class="vertical-text">r</div>
-					</h2>
-				</div>
 			</div>
 			<div class="slideshow">
 				<div class="slideshow__deco"></div>
@@ -146,6 +216,23 @@
 							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b004.jpg);" onclick=showImage("img/b004.jpg");></div>
 							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b005.jpg);" onclick=showImage("img/b005.jpg");></div>
 							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b006.jpg);" onclick=showImage("img/b006.jpg");></div>
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="img/thumbnails/b001.jpg" onclick="openModal('myModal');currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/thumbnails/b002.jpg" onclick="openModal('myModal');currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/thumbnails/b003.jpg" onclick="openModal('myModal');currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/thumbnails/b004.jpg" onclick="openModal('myModal');currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+
 						</div>
 					</div>					
 				</div>
