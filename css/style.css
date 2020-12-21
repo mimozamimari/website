@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("../assets/fonts/CaviarDreams");
+}
+
 header {
     background-color: #34262B;
     -webkit-background-size: cover;
@@ -16,7 +21,7 @@ header h1 {
 }
 
 h1 {
-    font-family: "Amatic SC", sans-serif;
+    font-family: "CaviarDreams", sans-serif;
 }
 
 .break1,
@@ -25,7 +30,7 @@ h1 {
 .contact h3,
 p,
 header h4 {
-    font-family: "Coming Soon", sans-serif;
+    font-family: "CaviarDreams", sans-serif;
 }
 
 .no-padding {
@@ -85,16 +90,16 @@ header h4 {
 
 nav ul li {
     font-size: 17px;
-    font-family: "News Cycle";
+    font-family: "CaviarDreams";
 }
 
 .about-us a {
-    font-family: "News Cycle", serif;
+    font-family: "CaviarDreams", serif;
 }
 
 .navbar-brand {
     font-size: 25px;
-    font-family: "News Cycle";
+    font-family: "CaviarDreams";
 }
 
 .navbar-default {
@@ -422,7 +427,7 @@ footer p {
 }
 
 .heading {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "CaviarDreams", Arial, sans-serif;
     font-size: 4rem;
     font-weight: 500;
     line-height: 1.5;
