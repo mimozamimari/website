@@ -1,333 +1,449 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Mimoza Mimarlık İzmir</title>
-		<meta name="description" content="Mimoza Mimarlık İzmir" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="Sena Neşem Uysal Beyza Kulu" />
-		<!--link rel="shortcut icon" href="favicon.ico"-->
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script>
-		document.documentElement.className = "js";
-		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
-		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-		</script>
-	</head>
-	<body class="loading">
-		<svg class="hidden">
-			<symbol id="icon-arrow" viewBox="0 0 24 24">
-				<title>arrow</title>
-				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
-			</symbol>
-			<symbol id="icon-drop" viewBox="0 0 24 24">
-				<title>drop</title>
-				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
-				<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
-			</symbol>
-			<symbol id="icon-longarrow" viewBox="0 0 54 24">
-				<title>longarrow</title>
-				<path d="M.42 11.158L12.38.256c.333-.27.696-.322 1.09-.155.395.166.593.467.593.903v6.977h38.87c.29 0 .53.093.716.28.187.187.28.426.28.716v5.98c0 .29-.093.53-.28.716a.971.971 0 0 1-.716.28h-38.87v6.977c0 .416-.199.717-.592.903-.395.167-.759.104-1.09-.186L.42 12.62a1.018 1.018 0 0 1 0-1.462z" />
-			</symbol>
-			<symbol id="icon-navarrow" viewBox="0 0 408 408">
-				<title>navarrow</title>
-				<polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
-			</symbol>
-		</svg>
-		<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
-  <div class="modal-content">
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="img/b001.jpg" style="width:100%">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mimoza Mimarlık İzmir</title>
+    <meta name="description" content="Mimoza Mimarlık İzmir" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Sena Neşem Uysal Beyza Kulu" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Questrial">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=News+Cycle">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Coming+Soon">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" media="screen">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inner">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand brand" href="#">Mimoza Mimarlık</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">Mimoza</a></li>
+                        <li><a href="#about-team">Biz</a></li>
+                        <li><a href="#works">Projeler</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="only-mobile ">
+
+        </div>
+    </header>
+
+    <div class="container-fluid no-padding">
+        <a name="home"></a>
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div id="carousel-custom" class="carousel-inner viewport-header" role="listbox">
+
+                <div class="item active">
+                    <!-- <img src="img/n010.jpg" alt="UYGULAMA" width="460" height="345"> -->
+                    <video src="videos/slider/001.mp4" class="slider-video" autoplay loop playsinline muted></video>
+                    <div class="carousel-caption">
+                        <h3>TASARIM</h3>
+                        <p class="action-btn">Proje, yapı, mekan tasarım uygulamaları</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <!-- <img src="img/n010.jpg" alt="UYGULAMA" width="460" height="345"> -->
+                    <video src="videos/slider/002.mp4" class="slider-video" autoplay loop playsinline muted></video>
+                    <div class="carousel-caption">
+                        <h3>UYGULAMA</h3>
+                        <p class="action-btn">İç mimarlık düzenlemeleri, modern, zarif dokunuşlar</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="img/b002.jpg" style="width:100%">
+    <!----ABOUT US---->
+
+    <div class="about-us" id="startchange" id="about">
+        <a name="about"></a>
+        <div class="container-fluid">
+            <div class="text-center">
+                <div class="">
+                    <hr>
+                    <p class="about-us-p">Mimoza Mimarlık, Beyza Kulu ve Neşem Uysal tarafından 2020'de Izmir'de ortaya çıkan bir tasarım ofisidir. Plan, proje, tasarım ve üretim çözümleri ile yaratıcılığı, modern ve elegan tasarımla buluşturmaya çalışıyoruz. </p>
+                    <a href="#about-team" class="team-btn-action">Ekibimiz</a>
+                    <br><br>
+                    <hr>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="img/b003.jpg" style="width:100%">
+    <div class="about-team" id="about-team">
+        <a name="about-team"></a>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="thumbnail">
+                    <img src="assets/beyza.JPG" alt="Mimar Beyza Kulu">
+                    <div class="caption">
+                        <h3>Beyza Kulu <span>Mimar, Başkent Üniversitesi</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit aliquam, unde quis perspiciatis at modi officia beatae explicabo quam inventore excepturi, ab nisi praesentium nostrum architecto. Esse, aliquid optio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="thumbnail">
+                    <img src="assets/nesem.JPG" alt="Mimar Nesem Uysal">
+                    <div class="caption">
+                        <h3>Neşem Uysal <span>Mimar, Dokuz Eylül Üniversitesi</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit aliquam, unde quis perspiciatis at modi officia beatae explicabo quam inventore excepturi, ab nisi praesentium nostrum architecto. Esse, aliquid optio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="img/b004.jpg" style="width:100%">
+    <div class="break2 container-fluid text-center">
+        <h3>Sizleri Ofisimize bekliyoruz</h3>
     </div>
 
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!----SERVICES---->
+    <div class="works">
+        <a name="works"></a>
+        <div class="container-fluid">
 
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
+            <div class="row">
+                <div class="text-center col-xs-12 col-sm-12 col-md-12">
+                    <h3>Projelerimiz</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="gallery">
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n001.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Çocuk Odası</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n002.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Çocuk Odası</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n003.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Çocuk Odası</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n004.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Salon</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n005.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Yatak Odası 1</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n006.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Yatak Odası 1</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n008.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Koridor</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n009.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Koridor</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n010.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Yatak Odası 2</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n011.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Yatak Odası 2</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n012.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Banyo</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n013.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Banyo</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/n015.png" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Çocuk Odası 2</h3>
+                                <p>Kemalpasa Konut Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b001.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Koridor</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b002.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Oturma Alanı</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b003.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Bar</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b004.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Ortak Alan</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b005.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Bar / Çalışma Alanı</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b006.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>İç Mekan</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b007.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Bilgisayar Salonu</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b008.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Yemek Salonu</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b009.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Bar 2</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b010.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Merdivenler</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="thumbnail">
+                            <img src="img/thumbnails/b011.jpg" class="gallery-image" />
+                            <div class="caption">
+                                <h3>Geniş Çekim</h3>
+                                <p>Hangar Cafe Projesi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="img/thumbnails/b001.jpg" onclick="currentSlide(1)" alt="Giriş">
+    <div class="break1 container-fluid text-center">
+        <p class="last-img"></p>
     </div>
 
-    <div class="column">
-      <img class="demo" src="img/thumbnails/b002.jpg" onclick="currentSlide(2)" alt="Çalışma Alanı">
+    <div class="contact text-center">
+        <a name="contact"></a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <br><br>
+                    <h3>Sosyal medyada bizi takip etmeyi unutmayın</h3>
+                    <a class="btn-mail" href="mailto:senanesem@mimozamimari.com?cc=beyzakulu@mimozamimari.com&subject=iletisim"><button type="button" class="btn btn-danger btn-mail">E-Mail</button></a>
+                </div>
+            </div>
+
+            <div class="row social-media-row-1">
+                <div class="icon col-xs-6 col-sm-6 col-md-6">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="icon col-xs-6 col-sm-6 col-md-6">
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="column">
-      <img class="demo" src="img/thumbnails/b003.jpg" onclick="currentSlide(3)" alt="Kafe">
-    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-center go-up-icon col-xs-12">
+                    <a href="#home"><i class="fa fa-angle-up"></i></a>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </footer>
 
-    <div class="column">
-      <img class="demo" src="img/thumbnails/b004.jpg" onclick="currentSlide(4)" alt="Kafe Geniş Spektrum">
-    </div>
-  </div>
-</div>
-
-<div id="infoModal" class="modal">
-  <span class="close cursor" onclick="closeModal('infoModal')">&times;</span>
-  <div class="modal-content">
-					<h2>Instagram'da Takip edin</h2>
-			<!-- SnapWidget -->
-			<script src="https://snapwidget.com/js/snapwidget.js"></script>
-			<iframe src="https://snapwidget.com/embed/883724" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
-					<br>
-					<p class="text-center">Bize ulaşın <a href="mailto:info@mimozamimari.com?cc=beyzakulu@mimozamimari.com, senanesem@mimozamimari.com, &subject=mimozamimari.com dan mail">info@mimozamimari.com</a></p>
-				</div>
-				
-				<p class="text-center"><small>Beyza Kulu ve Sena Neşem Uysal tarafından kurulan bir mimarlık ofisidir.</small></p>
-  </div>
-</div>
-<!--button type="button" class="modal-trigger js-trigger" onclick="openModal('infoModal');">Bilgi</button-->
-<div class="bottom-left hover-shadow"  onclick="openModal('infoModal');">
-	<h3>
-		<div class="vertical-text">h</div>
-		<div class="vertical-text">a</div>
-		<div class="vertical-text">k</div>
-		<div class="vertical-text">k</div>
-		<div class="vertical-text">ı</div>
-		<div class="vertical-text">m</div>
-		<div class="vertical-text">ı</div>
-		<div class="vertical-text">z</div>
-		<div class="vertical-text">d</div>
-		<div class="vertical-text">a</div>
-	</h3>
-</div>
-		<main>
-			<div class="frame">
-				<header class="heading">
-					<h1 class="heading__welcome">MİMOZA MİMARLIK<br>İZMİR</h1>
-				</header>
-			</div>
-			<div class="slideshow">
-				<div class="slideshow__deco"></div>
-				<div class="slide">
-					<div class="slide__img-wrap">
-						<div class="slide__img" style="background-image: url(img/b002.jpg);"></div>
-					</div>
-					<div class="slide__side">Dizayn &amp; Tasarım</div>
-					<div class="slide__title-wrap">
-						<span class="slide__number">1</span>
-						<h3 class="slide__title">Hangar Cafe</h3>
-						<h4 class="slide__subtitle">Ankara 2020</h4>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__img-wrap">
-						<div class="slide__img" style="background-image: url(img/n002.jpg);"></div>
-					</div>
-					<div class="slide__side">Tasarım &amp; Uygulama</div>
-					<div class="slide__title-wrap">
-						<span class="slide__number">2</span>
-						<h3 class="slide__title">Konut Projesi</h3>
-						<h4 class="slide__subtitle">Kemalpaşa 2020</h4>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__img-wrap">
-						<div class="slide__img" style="background-image: url(img/b003.jpg);"></div>
-					</div>
-					<div class="slide__side">Pratik &amp; Dokunuşlar</div>
-					<div class="slide__title-wrap">
-						<span class="slide__number">3</span>
-						<h3 class="slide__title">Açık Mekan Tasarımı</h3>
-						<h4 class="slide__subtitle">Ankara 2020</h4>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__img-wrap">
-						<div class="slide__img" style="background-image: url(img/b002.jpg);"></div>
-					</div>
-					<div class="slide__side">Dizayn &amp; Tasarım</div>
-					<div class="slide__title-wrap">
-						<span class="slide__number">4</span>
-						<h3 class="slide__title">Hangar Cafe</h3>
-						<h4 class="slide__subtitle">Ankara 2020</h4>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__img-wrap">
-						<div class="slide__img" style="background-image: url(img/n002.jpg);"></div>
-					</div>
-					<div class="slide__side">Tasarım &amp; Uygulama</div>
-					<div class="slide__title-wrap">
-						<span class="slide__number">5</span>
-						<h3 class="slide__title">Konut Projesi</h3>
-						<h4 class="slide__subtitle">Kemalpaşa 2020</h4>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide__img-wrap">
-						<div class="slide__img" style="background-image: url(img/b003.jpg);"></div>
-					</div>
-					<div class="slide__side">Pratik &amp; Dokunuşlar</div>
-					<div class="slide__title-wrap">
-						<span class="slide__number">6</span>
-						<h3 class="slide__title">Açık Mekan Tasarımı</h3>
-						<h4 class="slide__subtitle">Ankara 2020</h4>
-					</div>
-				</div>
-				<button class="nav nav--prev">
-					<svg class="icon icon--navarrow-prev">
-						<use xlink:href="#icon-navarrow"></use>
-					</svg>
-				</button>
-				<button class="nav nav--next">
-					<svg class="icon icon--navarrow-next">
-						<use xlink:href="#icon-navarrow"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="content">
-				<div class="content__item">
-					<span class="content__number">1</span>
-					<h3 class="content__title">Hangar Cafe Projesi</h3>
-					<h4 class="content__subtitle">Ankara 2020</h4>
-					<div class="content__text">
-						<div class="content__images">
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b001.jpg);" onclick=showImage("img/b001.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b002.jpg);" onclick=showImage("img/b002.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b003.jpg);" onclick=showImage("img/b003.jpg");></div>						
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b004.jpg);" onclick=showImage("img/b004.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b005.jpg);" onclick=showImage("img/b005.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b006.jpg);" onclick=showImage("img/b006.jpg");></div>
-<!-- Images used to open the lightbox -->
-<div class="row">
-  <div class="column">
-    <img src="img/thumbnails/b001.jpg" onclick="openModal('myModal');currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img/thumbnails/b002.jpg" onclick="openModal('myModal');currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img/thumbnails/b003.jpg" onclick="openModal('myModal');currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img/thumbnails/b004.jpg" onclick="openModal('myModal');currentSlide(4)" class="hover-shadow">
-  </div>
-</div>
-
-
-						</div>
-					</div>					
-				</div>
-				<div class="content__item">
-					<span class="content__number">2</span>
-					<h3 class="content__title">Konut Projesi</h3>
-					<h4 class="content__subtitle">Kemalpaşa İzmir 2020</h4>
-					<div class="content__text">
-						<div class="content__images">
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n001.png);" onclick=showImage("img/n001.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n002.png);" onclick=showImage("img/n002.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n003.png);" onclick=showImage("img/n003.jpg");></div>						
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n004.png);" onclick=showImage("img/n004.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n005.png);" onclick=showImage("img/n005.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n006.png);" onclick=showImage("img/n006.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n011.png);" onclick=showImage("img/n011.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n012.png);" onclick=showImage("img/n012.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n013.png);" onclick=showImage("img/n013.jpg");></div>
-						</div>
-					</div>
-				</div>
-				<div class="content__item">
-					<span class="content__number">3</span>
-					<h3 class="content__title">Açık Mekan Tasarımı</h3>
-					<h4 class="content__subtitle">Ankara 2020</h4>
-					<div class="content__text">
-						<div class="content__images">
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b001.jpg);" onclick=showImage("img/b001.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b002.jpg);" onclick=showImage("img/b002.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b003.jpg);" onclick=showImage("img/b003.jpg");></div>						
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b004.jpg);" onclick=showImage("img/b004.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b005.jpg);" onclick=showImage("img/b005.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b006.jpg);" onclick=showImage("img/b006.jpg");></div>
-						</div>
-					</div>
-				</div>
-				<div class="content__item">
-					<span class="content__number">4</span>
-					<h3 class="content__title">Hangar Cafe Projesi</h3>
-					<h4 class="content__subtitle">Ankara 2020</h4>
-					<div class="content__text">
-						<div class="content__images">
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b001.jpg);" onclick=showImage("img/b001.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b002.jpg);" onclick=showImage("img/b002.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b003.jpg);" onclick=showImage("img/b003.jpg");></div>						
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b004.jpg);" onclick=showImage("img/b004.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b005.jpg);" onclick=showImage("img/b005.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b006.jpg);" onclick=showImage("img/b006.jpg");></div>
-						</div>
-					</div>					
-				</div>
-				<div class="content__item">
-					<span class="content__number">5</span>
-					<h3 class="content__title">Konut Projesi</h3>
-					<h4 class="content__subtitle">Kemalpaşa İzmir 2020</h4>
-					<div class="content__text">
-						<div class="content__images">
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n001.png);" onclick=showImage("img/n001.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n002.png);" onclick=showImage("img/n002.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n003.png);" onclick=showImage("img/n003.jpg");></div>						
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n004.png);" onclick=showImage("img/n004.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n005.png);" onclick=showImage("img/n005.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n006.png);" onclick=showImage("img/n006.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n011.png);" onclick=showImage("img/n011.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n012.png);" onclick=showImage("img/n012.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/n013.png);" onclick=showImage("img/n013.jpg");></div-->
-						</div>
-					</div>
-				</div>
-				<div class="content__item">
-					<span class="content__number">6</span>
-					<h3 class="content__title">Açık Mekan Tasarımı</h3>
-					<h4 class="content__subtitle">Ankara 2020</h4>
-					<div class="content__text">
-						<div class="content__images">
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b001.jpg);" onclick=showImage("img/b001.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b002.jpg);" onclick=showImage("img/b002.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b003.jpg);" onclick=showImage("img/b003.jpg");></div>						
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b004.jpg);" onclick=showImage("img/b004.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b005.jpg);" onclick=showImage("img/b005.jpg");></div>
-							<div class="content_image-thumbnail" style="background-image: url(img/thumbnails/b006.jpg);" onclick=showImage("img/b006.jpg");></div>
-						</div>
-					</div>
-				</div>
-			</div>
-				<button class="content__close">
-					<svg class="icon icon--longarrow">
-						<use xlink:href="#icon-longarrow"></use>
-					</svg>
-				</button>
-		</main>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/charming.min.js"></script>
-		<script src="js/TweenMax.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/demo.js"></script>
-	</body>
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>

@@ -1,223 +1,512 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url("fonts/RobotoCondensed-Regular") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+header {
+    background-color: #34262B;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-body {
-  font-family: Roboto, serif;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
+.more-space {
+    margin-bottom: 20%;
 }
-body * {
-  box-sizing: border-box;
+
+header h1 {
+    color: #34262B;
+    font-size: 150px;
 }
-.hide {
-  display: none;
+
+h1 {
+    font-family: "Amatic SC", sans-serif;
 }
-.text-center {
-  text-align: center;
+
+.break1,
+.break2,
+.contact h2,
+.contact h3,
+p,
+header h4 {
+    font-family: "Coming Soon", sans-serif;
 }
-.content_image-thumbnail {
-  background-repeat: no-repeat;
+
+.no-padding {
+    padding: 0 !important;
 }
-.heading {
-  font-size: 2rem;
-  text-align: end;
-  position: fixed;
-  right: 10px;
-  top: 10px;
+
+.social-media {
+    margin-top: 7%;
 }
-.heading__welcome {
-  margin-top: 0.1em;
+
+.intro {
+    margin-top: 12%;
 }
-.vertical-text {
-  font-size: 1.75em;
+
+header h4 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
 }
-.bottom-left {
-  position: fixed;
-  bottom: 20px;
-  left: 5px;
-  z-index: 10001;
+
+.red {
+    color: #c1292e;
+    font-weight: bold;
 }
-.slide__img-wrap,
-.content_image-thumbnail::hover {
-  cursor: pointer !important;
+
+.slider-video {
+    object-fit: cover;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
 }
-.content__close {
-  z-index: 101;
-}
-.content__text {
-  max-width: 800px !important;
-}
-.content_image-thumbnail {
-  min-width: 200px;
-  min-height: 160px;
-  max-width: 200px;
-  max-height: 160px;
-  width: 200px;
-  height: 160px;
-  display: inline-block;
-}
-.content__close {
-font-size: 4rem !important;
-    z-index: 1500 !important;
-    text-align: left !important;
-    left: 40vh !important;
-    top: 8vh;
-}
-.icon--longarrow {
-    width: 4rem;
-}
-.content__images {
-  display: inline-block;
-  width: 800px;
-  text-align: left;
-}
-.heading__welcome {
-  font-size: 1.5em;
-}
-@media screen and (max-width: 1024px) {
-  body {
-    padding-top: 4.5rem;
-  }
-  .content__item--current {
-    background: #141414;
-    z-index: 101;
-  }
-  .content__images {
-    width: 26em;
-    padding-left:40px;
-  }
-  .content__item {
+
+.video-header {
     position: absolute;
-    padding: 2vh 4vw;
-  }
-}
-.row > .column {
-  padding: 0 8px;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.video-header,
+.video-header video,
+.video-header .viewport-header {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
+.carousel-caption h3,
+.carousel-caption p {
+    font-size: 2.5em;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 101;
-  padding-top: 100px;
-  left: 0;
-  top: 10vh;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #141414;
+
+/**Navbar customs**/
+
+nav ul li {
+    font-size: 17px;
+    font-family: "News Cycle";
 }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
+.about-us a {
+    font-family: "News Cycle", serif;
 }
 
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 60px;
-  font-weight: bold;
+.navbar-brand {
+    font-size: 25px;
+    font-family: "News Cycle";
 }
 
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
+.navbar-default {
+    background-color: #FDFFFC;
+    border: 0;
 }
 
-/* Hide the slides by default */
-.mySlides {
-  display: none;
+.navbar-default .navbar-brand {
+    margin-left: 5%;
+    color: #34262B;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #FDFFFC;
+    background-color: transparent;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.navbar-default .navbar-text {
+    color: #210A2A;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.navbar-default .navbar-nav>li>a {
+    color: #210A2A;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #F9F2F6;
+    background-color: transparent;
+    border-bottom: 1px solid #F9F2F6;
 }
 
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: #141414;
-  padding: 2px 16px;
-  color: white;
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #F9F2F6;
+    background-color: #e7e7e7;
 }
 
-img.demo {
-  opacity: 0.6;
+.navbar-default .navbar-nav>.disabled>a,
+.navbar-default .navbar-nav>.disabled>a:hover,
+.navbar-default .navbar-nav>.disabled>a:focus {
+    color: #F9F2F6;
+    background-color: transparent;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
 }
 
-img.hover-shadow {
-  transition: 0.3s;
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+.navbar-inner {
+    background: rgba(0, 0, 0, 0);
+}
+
+
+/**Navbar customs end**/
+
+
+/***Services***/
+
+.tabs {
+    background-color: #F26430;
+    border: 1px solid #210A20;
+}
+
+.works {
+    background: #ececec !important;
+}
+
+.works p {
+    margin-top: 3%;
+}
+
+.works h1 {
+    font-size: 100px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.works p,
+.works h3 {
+    text-align: center;
+    margin-top: .5em !important;
+}
+
+.thumbnail {
+    margin-bottom: 12%;
+    background-color: #fff;
+}
+
+.thumbnail:hover {
+    -webkit-box-shadow: 2px 2px 2px 1px #ccc;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 2px 2px 2px 1px #ccc;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 2px 2px 2px 1px #ccc;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.last-img {
+    height: 12em;
+    ;
+}
+
+.space {
+    margin-bottom: 10%;
+}
+
+.break1 {
+    background: url("/assets/mimoza_logo.JPG") center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.break2 {
+    background: url("/assets/mimoza_acilis2.JPG") center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.break2 h3 {
+    color: #fff;
+    font-size: 3em;
+    margin-top: 30%;
+    margin-bottom: 15%;
+    min-height: 6em;
+}
+
+.break1 h3 {
+    color: #fff;
+    font-size: 70px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+
+/**End of Services stylus***/
+
+
+/***About us****/
+
+.about-us {
+    background-color: #34262B;
+}
+
+.about-us h1 {
+    color: #2c2e2b;
+    font-size: 100px;
+    margin-top: 7%;
+}
+
+.info-us-card {
+    border: 20px solid #fff;
+}
+
+.info-us {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.about-us-p {
+    font-size: 2em;
+    color: #fff;
+    margin: auto;
+    padding: 4em 2em;
+}
+
+.team-btn-action {
+    margin-top: 25%;
+    border: 1px solid #FDFFFC;
+    padding: 20px 50px 20px 50px;
+    text-decoration: none;
+    color: #F9F2F6;
+}
+
+.team-btn-action:hover {
+    text-decoration: none;
+    background: rgba(193, 41, 46, 0.4);
+    color: #F9F2F6;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto !important;
+}
+
+
+/* Contact */
+
+.contact {
+    background-color: #c1292e;
+}
+
+.contact h1 {
+    font-size: 100px;
+    margin-top: 7%;
+}
+
+.social-media-row-1 {
+    margin-top: 1%;
+}
+
+.contact i {
+    font-size: 1000%;
+    padding: 20% 0% 20% 0%;
+}
+
+.contact .icon {
+    border: 1px solid black;
+}
+
+.icon a {
+    color: #fff;
+}
+
+.icon:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #34292b;
+}
+
+.btn-mail {
+    font-size: 1.5em !important;
+    margin: 0.5em !important;
+}
+
+.go-up-icon i {
+    color: white;
+    font-size: 400%;
+    margin: 5% 0;
+    border: 1px solid white;
+    padding: 2% 4% 3% 4%;
+    border-radius: 10%;
+}
+
+.go-up-icon i:hover {
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+footer p {
+    color: white;
+    padding-top: 37%;
+}
+
+.carousel-caption {
+    top: 55vh !important;
+}
+
+#carousel-custom>.item>img,
+#carousel-custom>.item>a>img {
+    height: 100vh;
+    margin: auto;
+    width: auto;
+    object-fit: cover;
+}
+
+.container {
+    width: 980px !important;
+}
+
+#myCarousel {
+    height: 100vh;
+}
+
+#myCarousel>.item {
+    height: 100%;
+}
+
+#myCarousel>.item>img {
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+}
+
+#carousel-custom>.item {
+    height: 100%;
+}
+
+.caption>h3>span {
+    font-size: 0.65em;
+    float: right;
+}
+
+.about-team {
+    max-width: 72em;
+    margin: auto;
+    padding: 3em;
+}
+
+.heading {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    padding: 3.5rem 0;
+    color: #1a1a1a;
+}
+
+.heading span {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+}
+
+.gallery-item {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+    min-height: 175px;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+}
+
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-gap: 2rem;
+    }
+    .gallery,
+    .gallery-item {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header h1,
+    .about-us h1,
+    .works h1,
+    .contact h1 {
+        font-size: 50px;
+        margin-bottom: 15%;
+    }
+    header h4 {
+        font-size: 20px;
+        margin-bottom: 15%;
+    }
+    .about-us-p {
+        font-size: 1.5em;
+    }
+    .contact i {
+        font-size: 500%;
+    }
+    .intro {
+        margin-top: 50%;
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .gallery-image {
+        min-height: 205px;
+    }
+    .contact i {
+        font-size: 1000%;
+        padding: 12% 0%;
+    }
 }
