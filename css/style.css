@@ -419,7 +419,8 @@ footer p {
 }
 
 .caption>h3>span {
-    font-size: 0.65em;
+    font-size: 0.5em;
+    padding-top: 1em;
     float: right;
 }
 
