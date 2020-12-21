@@ -226,19 +226,21 @@ nav ul li {
 }
 
 .break1 {
-    background: url("/assets/mimoza_logo.JPG") center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("../assets/mimoza_logo.png") center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .break2 {
-    background: url("/assets/mimoza_acilis2.JPG") center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("../assets/mimoza_logo.png") center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .break2 h3 {
@@ -249,7 +251,7 @@ nav ul li {
     min-height: 6em;
 }
 
-.break1 h3 {
+.break1 h1 {
     color: #fff;
     font-size: 70px;
     margin-top: 15%;
