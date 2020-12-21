@@ -232,6 +232,8 @@ nav ul li {
     -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #ececec;
+    filter: invert(100%);
 }
 
 .break2 {
@@ -241,6 +243,8 @@ nav ul li {
     -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #ececec;
+    filter: invert(100%);
 }
 
 .break2 h3 {
