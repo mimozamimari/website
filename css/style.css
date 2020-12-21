@@ -222,8 +222,7 @@ nav ul li {
 }
 
 .last-img {
-    height: 12em;
-    ;
+    height: 20em;
 }
 
 .space {
@@ -238,7 +237,7 @@ nav ul li {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #ececec;
-    filter: invert(100%);
+    filter: drop-shadow(10px 10px 20px black);
 }
 
 .break2 {
@@ -322,12 +321,16 @@ nav ul li {
 /* Contact */
 
 .contact {
-    background-color: #c1292e;
+    background-color: #3f3e3e;
 }
 
 .contact h1 {
     font-size: 100px;
     margin-top: 7%;
+}
+
+.contact h3 {
+    color: #000;
 }
 
 .social-media-row-1 {
